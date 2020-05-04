@@ -90,7 +90,7 @@ const CartProvider: React.FC = ({ children }) => {
       if (productId >= 0) {
         increment(product.id);
       } else {
-        const newProd = { ...product, quatity: 1 };
+        const newProd = { ...product, quantity: 1 };
         setProducts(oldProd => [...oldProd, newProd]);
       }
     },
